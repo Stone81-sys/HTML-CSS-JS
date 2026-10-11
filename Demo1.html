@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <h1>一级标题</h1>
     <h2>二级标题</h2>
     <h3>三级标题</h3>
@@ -25,18 +27,13 @@
         <td><input type="text" placeholder="班级"></td>
     </tr>
     <tr>
-        <td >张三</td>
-        <td rowspan="2"><1班/td>
-
-<!-- 效果错版 -->
-
-
-
-
+        <!-- colspan -->
+        <td>张三</td>
+        <td  rowspan="2">1班</td>
     </tr>
     <tr>
-        <td >李四</td>
-        <td>2班</td>
+        <td>李四</td>
+        <!-- <td>2班</td> -->
     </tr>
 </table>
 
@@ -49,26 +46,43 @@
 <input type="password"><br>
 <br>
 
+<form action="Submit.html" method="get">
 
-<input type="radio" name="1" id="2"><label for="2">羽毛球</label> 
-<input type="radio" name="1" id="3"><label for="3">乒乓球</label> 
-<input type="radio" name="1" id="4"><label for="4">足球</label> 
-<input type="radio" name="1" id="5"><label for="5">排球</label> 
+<input type="radio" name="1" id="2" checked><label for="2">羽毛球</label> 
+<input type="radio" name="1" id="3" ><label for="3">乒乓球</label> 
+<input type="radio" name="1" id="4" ><label for="4">足球</label> 
+<input type="radio" name="1" id="5" ><label for="5">排球</label> 
 
 <br><br>
 
-<input type="checkbox" name="6">羽毛球
-<input type="checkbox" name="6">乒乓球
-<input type="checkbox" name="6">足球
-<input type="checkbox" name="6">排球
+<input type="checkbox" name="6" id="0"><label for="0">羽毛球</label>
+<input type="checkbox" name="6" id="7"><label for="7">乒乓球</label>
+<input type="checkbox" name="6" id="8"><label for="8">足球</label>
+<input type="checkbox" name="6" id="9"><label for="9">排球</label>
+
+<br>
+<br>
+
+<button>提交</button>
+
+</form>
+<br>
+
+<div>
+<select name="喜欢" id="">
+    <option value="足球">足球</option>
+    <option value="排球">排球</option>
+    <option value="乒乓球">乒乓球</option>
+</select>
+</div>
+<span>
+<textarea name="" id="">wooooo ~    四个空格呦呦呦~~~</textarea>
+</span>
 
 
 
-
-
-
-<!-- width="90px" -->
 <!-- colspan="2" -->
+
 
 </body>
 </html>
